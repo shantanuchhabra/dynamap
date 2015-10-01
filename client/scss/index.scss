@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  padding: 40px 0 40px 180px;
+  background-color: #a7adb3;
+  border-bottom: 2px solid #ccc;
+  opacity: 0.6;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#map {
+  position: absolute;
+  z-index: 5;
+  top: 123px;
+  left: 0;
+}
+
+// Presentation area
+#metric-picker {
+  position: absolute;
+  z-index: 10;
+  top: 123px;
+  left: 0;
+
+  padding: 40px 180px 40px;
+  height: 180px;
+  width: 100%;
+
+  p {
+    padding-left: 5px;
+    font-weight: bold;
+  }
+
+  #metrics {
+     width: 500px;
+     padding: 8px;
+     font-size: 16px;
+     height: 44px;
+     -webkit-appearance: none;
+        -moz-appearance: none;
+             appearance: none;
+
+    outline: -webkit-focus-ring-color auto 5px;
+  } 
+}
+
+#mid-separator {
+  height: 720px;
+  z-index: -1;
+}
+
+#top-shade, #bot-shade {
+  height: 180px;
+  background-color: #eee;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#left-shade, #right-shade {
+  width: 240px;
+  height: 720px;
+  background-color: #eee;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#left-shade {
+  position: absolute;
+  left: 0;
+  top: 305px;
+}
+
+#right-shade {
+  position: absolute;
+  left: 1680px;
+  top: 305px;
+}
+
+#content {
+  width: 1920px;
+  height: 1080px;
+}
+
+#info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#info-display {
+  position: absolute;
+  left: 660px;
+  top: 900px;
+  text-align: center;
+  font-size: 36px;
+  height: 60px;
+  width: 600px;
+}

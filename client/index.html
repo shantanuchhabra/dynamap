@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamap - Visualize world map according to different metrics</title>
+        <link rel="stylesheet" type="text/css" href="/app.css" />
+    </head>
+    <body>
+        <div id="header">DynaMap</div>
+
+        <div id="content">
+          <canvas id="map" width="1920" height="1080"></canvas>
+          <div id="metric-picker">
+            <p>Please select a metric below:</p>
+            <br>
+            <select id="metrics"></select>
+          </div>
+
+          <div class="shade" id="top-shade"></div>
+          <div id="mid-separator"></div>
+          <div class="shade" id="bot-shade"></div>
+
+          <!-- Absolutely positioned to left and right -->
+          <div class="shade" id="left-shade"></div>
+          <div class="shade" id="right-shade"></div>
+          <!-- -->
+        </div>
+
+        <div id="info-display"></div>
+
+        <script src="/app.js"></script>
+    </body>
+</html>
