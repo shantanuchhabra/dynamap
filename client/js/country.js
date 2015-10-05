@@ -76,8 +76,6 @@ Country.prototype.generatePreferences = function(result) {
         result[startPoint].push([endX, endY, priority]);
 
         if (endX == null || endY == null) {
-            alert("Hey! That dumb-ass null thing happened again. Check the console.");
-            console.log("Hey! I'm a null fucking idiot:");
             console.log("\t" + this.id);
             console.log(this);
     for (var thing in result) {
